@@ -54,7 +54,7 @@ export function TrafficChart({ data }: TrafficChartProps) {
             height={36}
             iconType="circle"
             wrapperStyle={{ fontSize: '12px' }}
-            formatter={(value, entry) => `${value} (${entry.payload.value}%)`}
+            formatter={(value, entry) => `${value} (${entry.payload?.value ?? ''}%)`}
           />
         </PieChart>
       </ResponsiveContainer>
